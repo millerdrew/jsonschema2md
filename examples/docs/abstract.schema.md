@@ -13,7 +13,7 @@ This is an abstract schema. It has `definitions`, but does not declare any prope
 
 | [Abstract](../abstract.md) | Extensible | [Status](../status.md) | Identifiable | Custom Properties | Additional Properties | Defined In                                   |
 | -------------------------- | ---------- | ---------------------- | ------------ | ----------------- | --------------------- | -------------------------------------------- |
-| Cannot be instantiated     | Yes        | Experimental           | No           | Forbidden         | Permitted             | [abstract.schema.json](abstract.schema.json) |
+| Cannot be instantiated     | Yes        | Experimental           | No           | Forbidden         | Permitted             | [abstract.schema.json](https://github.com/adobe/jsonschema2md/blob/master/examples/schemas/abstract.schema.json) |
 
 # Abstract Definitions
 
