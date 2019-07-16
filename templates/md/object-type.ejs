@@ -11,7 +11,11 @@
 
 <% _.keys(schema.properties).sort().forEach(property => {
   const inner = schema.properties[property];
-  simpletype(inner)
+  simpletype(inner);
+  var examples = inner.examples;
+  if (!examples && inner.items) {
+    examples = inner.items.examples;
+  }
   const required = (Array.isArray(schema.required)&&schema.required.indexOf(property)>=0); %>
 
 <%- include("nested-property",{
@@ -20,7 +24,7 @@
     name: property, 
     schema: inner,
     required: required,
-    examples: inner.examples,
+    examples: examples,
     nameSlug:nameSlug
   }) %>
 
